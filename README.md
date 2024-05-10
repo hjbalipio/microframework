@@ -20,7 +20,7 @@ This project showcases the development of a simple microframework, focusing on r
 
 ![Image Name](./profile.png)
 
-Hello, I'm <b>Hernan John Alipio</b> with more than a decade of experience across Software Development, Database Management and Data Science and Analytics, I've led numerous notable achievements and projects. I'm a passionate with Big Data technologies, building a scalable data pipelines and DevOps practices and automation, dedicated to leveraging technology for scalable solutions and streamlined operations. Welcome to my GitHub profile!
+Hello, I'm <b>Hernan John Alipio</b> with more than a decade of experience across Software Development, Database Management and Data Engineering and Analytics, I've led numerous notable achievements and projects. I'm a passionate with Big Data technologies, building a scalable data pipelines and DevOps practices and automation, dedicated to leveraging technology for scalable solutions and streamlined operations. Welcome to my GitHub profile!
 
 
 ## Get in Touch
