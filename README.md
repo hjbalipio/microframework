@@ -1,6 +1,6 @@
 # MicroFramework
 
-Welcome to the Microframework Project! This project aims to demonstrate the usage and implementation of a microframework in Python.
+Welcome to the Microframework Project! This project aims to demonstrate the usage and implementation of a microframework.
 
 ## Overview
 
@@ -17,9 +17,11 @@ This project showcases the development of a simple microframework, focusing on r
 
 ## Author
 
-![Image Name](./profile.jpg){width="300px" height="300px"}
+![Image Name](./profile.png)
 Name: Hernan John Alipio<br/>
-Email: [hernanjohn.alipio@enan.ph](mailto:hernanjohn.alipio@enan.ph)<br/>
+Website: [https://enan.ph](https://enan.ph)<br/>
+Email Address: [hernanjohn.alipio@enan.ph](mailto:hernanjohn.alipio@enan.ph)
+
 Social Media Accounts: <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LinkedIn: 
 [https://www.linkedin.com/in/hernan-john-alipio-191aab53/](https://www.linkedin.com/in/hernan-john-alipio-191aab53)
