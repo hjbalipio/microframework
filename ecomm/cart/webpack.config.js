@@ -14,6 +14,14 @@ module.exports = {
                 './CartShow': './src/index'
             },
             shared: ['faker'],
+            /*
+            This can be done when we tried to load Angular.
+            shared: {
+                faker: {
+                    singleton: true,
+                },
+            }
+            */
         }),
         new HtmlWebpackPlugin({
             template: './public/index.html'
