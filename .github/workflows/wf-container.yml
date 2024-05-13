@@ -1,5 +1,6 @@
 name: deploy-container-v2
 
+
 on:
   push:
     branches:
@@ -17,6 +18,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+        with:
+          persist-credentials: false
       - run: npm install
       - run: npm run build
 
@@ -26,3 +29,4 @@ jobs:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_DEFAULT_REGION: us-east-2
+          
