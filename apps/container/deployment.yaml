@@ -1,0 +1,22 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: mf-express-app
+spec:
+  selector:
+    matchLabels:
+      app: mf-express-app
+  template:
+    metadata:
+      labels:
+        app: mf-express-app
+    spec:
+      containers:
+      - name: mf-express-app
+        image: 'alipiohernanjohn/mf:latest'
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 3000
