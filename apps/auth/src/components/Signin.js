@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
@@ -53,6 +53,9 @@ const useStyles = makeStyles((theme) => ({
 export default function SignIn({ onSignIn }) {
   const classes = useStyles();
 
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
   return (
     <Container component="main" maxWidth="xs">
       <div className={classes.paper}>
@@ -63,9 +66,7 @@ export default function SignIn({ onSignIn }) {
           Sign in
         </Typography>
         <form
-          onSubmit={(e) => e.preventDefault()}
           className={classes.form}
-          noValidate
         >
           <TextField
             variant="outlined"
@@ -75,7 +76,9 @@ export default function SignIn({ onSignIn }) {
             id="email"
             label="Email Address"
             name="email"
-            autoComplete="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            autoComplete="email" 
             autoFocus
           />
           <TextField
@@ -87,6 +90,8 @@ export default function SignIn({ onSignIn }) {
             label="Password"
             type="password"
             id="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
             autoComplete="current-password"
           />
           <FormControlLabel
@@ -99,7 +104,7 @@ export default function SignIn({ onSignIn }) {
             variant="contained"
             color="primary"
             className={classes.submit}
-            onClick={onSignIn}
+            onClick={onSignIn(email,password)}
           >
             Sign In
           </Button>
